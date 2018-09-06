@@ -13,7 +13,6 @@ class GeoCountrySeeder extends Seeder
      */
     public function run() {  
         if (Country::count() > 0) {
-            DB::table('countries')->delete();
             $this->command->info('Table Countries is Fullfiled! Go ahead...');
         } else {
             $this->command->info('Seeding Countries Table with Geolite DB CSV! Large file, wait please...');
