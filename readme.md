@@ -13,7 +13,7 @@ Simple project showing how to load GeoLite Country IP list from CSV file into a 
 - Run __php artisan key:generate__
 - Run __php artisan migrate__
 - Run __php artisan db:seed__ to Load CSV file and fill table countries
-- That's it - load the homepage and change IP request to testing IP (api/locationByIP?IP=127.0.0.1)
+- That's it - Try api GET endpoint on localhost:8000/api/locationByIP?IP=127.0.0.1 (Change for the IP you want to)
 
 ---
 

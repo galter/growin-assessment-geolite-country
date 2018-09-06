@@ -10,8 +10,6 @@ use App\Http\Resources\Country as CountryResource;
 
 class CountryController extends Controller {
     public function index(Request $request) {
-        
-
         /* return $request->IP; */
         $country = Country::select("*")->whereRaw('(INET_ATON(?)) between start_long and end_long', [$request->IP])->get()->first();
 
